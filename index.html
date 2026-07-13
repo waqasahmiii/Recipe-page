@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #050816;
+        }
+        article {
+            /* max-width: 480px; */
+            width: 100%;
+            background: #101827;
+            color: white;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+}
+
+        h2{
+            text-transform: uppercase;
+            margin: 4%;
+        }
+        .a, h1{
+            text-align: center;
+            color: #ffffff;
+        }
+        .a{
+            font-size: 14px;
+        }
+        section{
+            border-top: 1px solid #ffffff;
+            padding-top: 1.25rem;
+            margin-bottom: 1.5rem;
+            color:#ffffff;
+        }
+        ul,ol{
+            padding-left: 20px;
+            line-height: 1.7;
+            font-size: 14px;
+            color: #ffffff;
+        }
+        table{
+            width: 100%;
+            font-size: 13px;
+            color: #ffffff;
+        }
+        td{
+            padding: 6px 0;
+        }
+        td:last-child{
+            text-align: right;
+        }
+        .border {
+            padding: 4px;
+            border-radius: 16px;
+            max-width: 500px;
+            margin: 60px auto;
+            position: relative;
+            overflow: hidden;
+}
+        .border::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(rgb(251, 0, 0), #bbff00, #3700ff, rgb(0, 255, 13));
+            animation: spin 4s linear infinite;
+}
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+    }
+            to {
+                transform: rotate(360deg);
+    }
+}
+/* article:hover{
+    transform: translateY(-8px);
+} */
+    </style>
+</head>
+<body>
+    <div class="border">
+    <article>
+        <h1>Clasic tomato pasta</h1>
+        <p class="a">Serves 4:30 minutes</p>
+        <section>
+            <h2>Ingredients</h2>
+            <ul>
+            <li>400g pasta</li>
+            <li>4 Large tomatoes, chopped</li>
+            <li>3 garlic cloves, minced</li>
+            <li>2 tbsp olive oil</li>
+            <li>salt and papper to taste</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Steps</h2>
+            <ol>
+            <li>Boil Pasta according to package instructions.</li>
+            <li>Heat olive oil, saute garlic until fragrant.</li>
+            <li>Add tomatoes, cook until soft.</li>
+            <li>Toss pasta with sauce, season, and serve.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                Nutrition(per serving)
+            </h2>
+            <table>
+                <tr>
+                    <td>Calories</td>
+                    <td>340 kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>11g</td>
+                </tr>
+                <tr>
+                    <td>Carbs</td>
+                    <td>58g</td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    </div>
+</body>
+</html>
